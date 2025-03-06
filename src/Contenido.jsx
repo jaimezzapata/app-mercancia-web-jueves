@@ -1,9 +1,13 @@
 import Card from "./Card"
-
+import { envios } from "./api/database"
 function Contenido() {
   return (
     <div className="panel-control-contenido">
-      <Card />
+      {
+        envios.map((envio) => {
+          return <Card children={envio} />
+        })
+      }
     </div>
   )
 }
