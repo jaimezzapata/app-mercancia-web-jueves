@@ -33,5 +33,12 @@ export let envios = [
     "pedido": "Zapatos",
     "precio": 120000,
     "peso": "4KG"
-  }
+  },
+  {
+    "origen": "Cali",
+    "destino": "Medellin",
+    "pedido": "Tecnología",
+    "precio": 120000,
+    "peso": "14KG"
+  },
 ]
