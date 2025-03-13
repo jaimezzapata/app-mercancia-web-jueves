@@ -1,4 +1,5 @@
 import imgUser from '../assets/user.jpg'
+import { Link } from 'react-router-dom'
 function MenuLateral() {
   return (
     <aside className="panel-control-aside">
@@ -7,10 +8,10 @@ function MenuLateral() {
       </div>
       <nav>
         <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/envios">Envios</Link></li>
+          <li><Link to="/clientes">Clientes</Link></li>
+          <li><Link to="/cerrar">Cerrar Sesión</Link></li>
         </ul>
       </nav>
     </aside>

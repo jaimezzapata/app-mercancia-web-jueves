@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import PanelControl from './pages/PanelControl'
+import { enrutador } from './routes/enrutador'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+let router = createBrowserRouter(enrutador)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PanelControl />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
